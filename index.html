@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CUSY · Sartoria artigianale a Rosolini · Cucito a mano, con cura</title>
+<meta name="description" content="Sartoria artigianale a Rosolini (Siracusa). Abiti per bambini, corredini, premaman e bomboniere cuciti a mano su commissione.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CUSY · Cucito a mano, con cura">
+<meta property="og:description" content="Pezzi unici cuciti a mano a Rosolini: corredini, abiti per bambini, premaman, bomboniere.">
+<meta property="og:image" content="media/hero-poster.jpg"><!-- IMMAGINE CONDIVISIONE: usa un JPG 1200x630 e l'URL completo del sito -->
+<meta name="theme-color" content="#FBF8F4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"CUSY","description":"Sartoria artigianale su commissione","address":{"@type":"PostalAddress","addressLocality":"Rosolini","addressRegion":"SR","addressCountry":"IT"},"email":"info@cusy.it","telephone":"+39XXXXXXXXXX","image":"media/hero-poster.jpg"}
+</script>
+</head>
+<body class="lock">
+
+<!-- INTRO: il filo cuce il nome (si salta col pulsante, o dopo ~3 secondi) -->
+<div id="intro" role="dialog" aria-label="Apertura">
+  <div class="logo-draw">
+    <svg viewBox="0 0 360 150" aria-hidden="true">
+      <text x="180" y="112" text-anchor="middle" class="stitch-text">CUSY</text>
+      <text x="180" y="112" text-anchor="middle" class="fill-text">CUSY</text>
+    </svg>
+    <span class="intro-needle" aria-hidden="true"></span>
+  </div>
+  <button id="skip" type="button">Salta</button>
+</div>
+
+<header class="top">
+  <a href="#hero" class="brand">CUSY</a>
+  <details class="menu">
+    <summary>Menu</summary>
+    <nav>
+      <a href="#chi">Chi sono</a>
+      <a href="#servizi">Cosa faccio</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#come">Come lavoro</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </details>
+</header>
+
+<main>
+  <!-- Il filo: tracciato SVG costruito da js/main.js passando per gli elementi [data-t] -->
+  <svg id="thread" aria-hidden="true">
+    <defs><mask id="tm"><path id="tmask" fill="none" stroke="#fff" stroke-width="6"/></mask></defs>
+    <path id="tghost" fill="none"/>
+    <path id="tgold" fill="none" mask="url(#tm)"/>
+    <g id="needle"><path d="M-20 0H18" stroke="#3B3330" stroke-width="2.2" stroke-linecap="round"/><ellipse cx="-15" cy="0" rx="3.4" ry="1.2" fill="#FBF8F4" stroke="#3B3330" stroke-width=".9"/></g>
+  </svg>
+
+  <!-- 1. HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1><span>Cucito</span><span>a mano,</span><span>con cura.</span></h1>
+      <p class="sub">Pezzi unici, pensati per te.</p>
+      <p class="actions">
+        <a class="btn solid" href="#galleria">Guarda i lavori</a>
+        <!-- WHATSAPP: sostituisci XXXXXXXXXX con il numero (senza spazi) -->
+        <a class="btn line" href="https://wa.me/39XXXXXXXXXX?text=Ciao%2C%20vorrei%20raccontarti%20un'idea" rel="noopener">Scrivimi su WhatsApp</a>
+      </p>
+    </div>
+    <div class="arch-wrap">
+      <div class="arch">
+        <!-- VIDEO HERO: MP4 H.264 senza audio, sotto i 5 MB, 720px di larghezza. Poster = primo fotogramma -->
+        <video autoplay muted loop playsinline preload="metadata" poster="media/hero-poster.jpg" aria-label="Cerchio da ricamo con il nome Andrea, in filo blu su tulle">
+          <source src="media/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <span class="start" data-t="c" data-y="b"></span>
+  </section>
+
+  <section class="lead wrap" data-t="r">
+    <p>Ogni punto racconta una storia. Dalla delicatezza di un corredino alla magia di una bomboniera, creo cose belle che durano nel tempo.</p>
+  </section>
+
+  <!-- 2. CHI SONO: tre momenti, le foto si aprono come una cucitura -->
+  <section id="chi" class="wrap about" data-t="l">
+    <h2>Chi sono</h2>
+    <article class="moment">
+      <div class="photo" data-p="seam"><!-- FOTO 1: mani/oggetti d'infanzia (filo, ago). 4:5, WebP o JPG max 150 KB. Sostituisci il div .ph con <img src="media/chi-1.webp" alt="..." loading="lazy"> -->
+        <div class="ph" role="img" aria-label="Segnaposto: foto di filo e ago">Foto: filo e ago<br>(4:5)</div></div>
+      <div class="txt"><h3>Un filo, un ago e tanta curiosità</h3>
+        <p>Tutto è iniziato da bambina, con un filo, un ago e tanta curiosità.</p></div>
+    </article>
+    <article class="moment flip">
+      <div class="photo" data-p="seam"><!-- FOTO 2: mani al lavoro -->
+        <div class="ph" role="img" aria-label="Segnaposto: foto delle mani al lavoro">Foto: le mie mani al lavoro<br>(4:5)</div></div>
+      <div class="txt"><h3>La passione diventa mestiere</h3>
+        <p>Quella passione, coltivata con pazienza negli anni, è diventata il mio mestiere. Da Rosolini realizzo capi e piccoli oggetti fatti a mano, uno alla volta, con la calma che richiede il lavoro ben fatto.</p></div>
+    </article>
+    <article class="moment">
+      <div class="photo" data-p="seam"><!-- FOTO 3: tessuti, bottoni, dettagli -->
+        <div class="ph" role="img" aria-label="Segnaposto: foto di tessuti e dettagli">Foto: tessuti e dettagli<br>(4:5)</div></div>
+      <div class="txt"><h3>Nasce dai tuoi desideri</h3>
+        <p>Ogni pezzo è unico: scegli tessuti, colori e dettagli, e io li trasformo in qualcosa che racconta te e la tua famiglia.</p></div>
+    </article>
+  </section>
+
+  <!-- 3. SERVIZI: elenco tipografico, l'immagine si cuce al passaggio/tocco -->
+  <section id="servizi" class="wrap services" data-t="r">
+    <div class="svc-head">
+      <div>
+        <h2>Cosa faccio</h2>
+        <p>Lavoro su commissione, ascoltando ogni richiesta. Raccontami cosa immagini e lo realizzeremo insieme.</p>
+      </div>
+      <!-- L'abitino si disegna con lo scroll -->
+      <svg class="dress" viewBox="0 0 100 140" aria-hidden="true" data-p="dress">
+        <path pathLength="1" d="M36 6 L40 6 Q50 20 60 6 L64 6 L66 38 L60 46 L78 130 Q50 138 22 130 L40 46 L34 38 Z M40 46 Q50 52 60 46"/>
+      </svg>
+    </div>
+    <ul class="svc">
+      <li><button type="button" aria-expanded="false"><span>Abiti e capi per bambini</span></button>
+        <div class="more"><div><figure><!-- IMMAGINE: 16:10 --><div class="ph" role="img" aria-label="Segnaposto: abito per bambini">Foto: abiti per bambini</div><figcaption>Capi morbidi, comodi, su misura per chi cresce in fretta.</figcaption></figure></div></div></li>
+      <li><button type="button" aria-expanded="false"><span>Corredini e nascita</span></button>
+        <div class="more"><div><figure><img src="media/hero-poster.jpg" alt="Cerchio da ricamo con il nome Andrea in filo blu, con fiori secchi" loading="lazy"><figcaption>Fiocchi, cuscini, cerchi con il nome: i primi ricordi, cuciti a mano.</figcaption></figure></div></div></li>
+      <li><button type="button" aria-expanded="false"><span>Premaman</span></button>
+        <div class="more"><div><figure><div class="ph" role="img" aria-label="Segnaposto: capo premaman">Foto: premaman</div><figcaption>Tessuti leggeri e linee che accompagnano il cambiamento.</figcaption></figure></div></div></li>
+      <li><button type="button" aria-expanded="false"><span>Bomboniere</span></button>
+        <div class="more"><div><figure><div class="ph" role="img" aria-label="Segnaposto: bomboniera">Foto: bomboniere</div><figcaption>Piccoli oggetti da conservare, scelti con te per la tua festa.</figcaption></figure></div></div></li>
+      <li><button type="button" aria-expanded="false"><span>Riparazioni e modifiche</span></button>
+        <div class="more"><div><figure><div class="ph" role="img" aria-label="Segnaposto: riparazione">Foto: riparazioni</div><figcaption>Un orlo, una cerniera, un capo del cuore che torna come nuovo.</figcaption></figure></div></div></li>
+    </ul>
+  </section>
+
+  <!-- 4. GALLERIA: il filo da bucato -->
+  <section id="galleria" class="gallery" data-t="l">
+    <div class="wrap"><h2>Alcuni lavori</h2>
+      <div class="chips" role="group" aria-label="Filtra per categoria">
+        <button type="button" data-f="tutti" aria-pressed="true">Tutti</button>
+        <button type="button" data-f="bambini" aria-pressed="false">Bambini</button>
+        <button type="button" data-f="nascita" aria-pressed="false">Nascita</button>
+        <button type="button" data-f="premaman" aria-pressed="false">Premaman</button>
+        <button type="button" data-f="bomboniere" aria-pressed="false">Bomboniere</button>
+      </div>
+    </div>
+    <div class="line" id="line" tabindex="0" aria-label="Galleria dei lavori, scorri in orizzontale">
+      <div class="track">
+        <!-- Ogni lavoro: <figure class="peg" data-cat="..." data-cap="didascalia" [data-video="media/xxx.mp4"] [data-src="media/xxx.webp"]>.
+             Foto: WebP/JPG 900px lato lungo, max 120 KB. Video: MP4 breve, sotto i 5 MB. -->
+        <figure class="peg" data-cat="nascita" data-cap="Cerchio con il nome Andrea, filo blu su tulle e fiori secchi." data-video="media/hero.mp4" data-src="media/hero-poster.jpg" style="--r:-1.5deg;--d:0s">
+          <button type="button" aria-label="Apri: cerchio con il nome Andrea (video)"><i class="clip"></i><div class="pic"><img src="media/hero-poster.jpg" alt="Cerchio da ricamo con il nome Andrea" loading="lazy"><span class="play">Video</span></div></button></figure>
+        <figure class="peg" data-cat="bambini" data-cap="Abitino per bambina, cotone ricamato." style="--r:1.2deg;--d:-.8s">
+          <button type="button" aria-label="Apri: abitino per bambina"><i class="clip"></i><div class="pic"><div class="ph tall" role="img" aria-label="Segnaposto">Foto 2</div></div></button></figure>
+        <figure class="peg" data-cat="bomboniere" data-cap="Sacchetti di tulle per un battesimo." style="--r:-.8deg;--d:-1.6s">
+          <button type="button" aria-label="Apri: sacchetti bomboniera"><i class="clip"></i><div class="pic"><div class="ph sq" role="img" aria-label="Segnaposto">Foto 3</div></div></button></figure>
+        <figure class="peg" data-cat="premaman" data-cap="Blusa premaman in lino leggero." style="--r:1.6deg;--d:-2.4s">
+          <button type="button" aria-label="Apri: blusa premaman"><i class="clip"></i><div class="pic"><div class="ph tall" role="img" aria-label="Segnaposto">Foto 4</div></div></button></figure>
+        <figure class="peg" data-cat="nascita" data-cap="Coperta per culla, ricamo a mano." style="--r:-1.2deg;--d:-3.2s">
+          <button type="button" aria-label="Apri: coperta per culla"><i class="clip"></i><div class="pic"><div class="ph sq" role="img" aria-label="Segnaposto">Foto 5</div></div></button></figure>
+        <figure class="peg" data-cat="bambini" data-cap="Gonna a ruota per la festa." style="--r:.9deg;--d:-4s">
+          <button type="button" aria-label="Apri: gonna a ruota"><i class="clip"></i><div class="pic"><div class="ph tall" role="img" aria-label="Segnaposto">Foto 6</div></div></button></figure>
+        <figure class="peg" data-cat="bomboniere" data-cap="Fiori di stoffa per la comunione." style="--r:-1.7deg;--d:-4.8s">
+          <button type="button" aria-label="Apri: fiori di stoffa"><i class="clip"></i><div class="pic"><div class="ph sq" role="img" aria-label="Segnaposto">Foto 7</div></div></button></figure>
+      </div>
+    </div>
+  </section>
+
+  <dialog id="lb" aria-label="Lavoro ingrandito">
+    <button type="button" id="lbx">Chiudi</button>
+    <div id="lbm"></div>
+    <p id="lbc"></p>
+  </dialog>
+
+  <!-- 5. COME LAVORO: sequenza reale, il filo passa dai tre nodi -->
+  <section id="come" class="wrap process">
+    <h2>Come lavoro</h2>
+    <ol>
+      <li><span class="knot" data-t="k">1</span><h3>Mi racconti l'idea</h3><p>Mi scrivi o mi chiami e mi dici cosa hai in mente, per chi è e per quando.</p></li>
+      <li><span class="knot" data-t="k">2</span><h3>Scegliamo insieme tessuti e colori</h3><p>Ti mostro stoffe, fili e dettagli, e decidiamo con calma.</p></li>
+      <li><span class="knot" data-t="k">3</span><h3>Cucio il tuo pezzo a mano</h3><p>Lo cucio un punto alla volta e te lo consegno pronto.</p></li>
+    </ol>
+  </section>
+
+  <!-- 6. CONTATTI -->
+  <section id="contatti" class="wrap contact">
+    <h2>Scrivimi o chiamami: sarò felice di ascoltare la tua idea.</h2>
+    <p class="actions">
+      <a class="btn solid" href="https://wa.me/39XXXXXXXXXX" rel="noopener">Scrivimi su WhatsApp</a><!-- NUMERO WHATSAPP -->
+      <a class="btn line" href="mailto:info@cusy.it">info@cusy.it</a><!-- EMAIL -->
+    </p>
+    <p class="where">Rosolini (SR), Sicilia</p>
+    <p class="social"><a href="https://www.instagram.com/" rel="noopener">Instagram</a> <a href="https://www.facebook.com/" rel="noopener">Facebook</a><!-- LINK SOCIAL --></p>
+    <span class="end" data-t="c"></span>
+  </section>
+</main>
+
+<footer><p>CUSY, sartoria artigianale. Rosolini (SR).</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
